@@ -76,7 +76,7 @@ class Renderer(object):
         self.default_color = color(int(r*255),int(g*255),int(b*255))
 
     #Using class implementation
-    def line(self,x0,y0,x1,y1):
+    def glLine(self,x0,y0,x1,y1):
         x0 = int((x0+1)*(self.vp_width/2)+self.vp_x)
         y0 = int((y0+1)*(self.vp_height/2)+self.vp_y)
         x1 = int((x1+1)*(self.vp_width/2)+self.vp_x)
